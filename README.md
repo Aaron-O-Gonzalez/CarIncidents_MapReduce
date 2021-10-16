@@ -18,7 +18,7 @@ Specific to the problem statement, only incident reports of type "I" are of inte
 
 The **main.py** file divides the MapReduce process into multiple steps:
 
-1. Loading the input data into a Spark RDD
+1. Loading the input data from **data.csv** into a Spark RDD
 2. Creating a paired RDD using the vin_number as a key, and a value list containing incident_type, make, and year.
 3. Loading missing make and year fields using the vin_number as the key for reference.
 4. Filtering out the incident_type to only contain category "I"
